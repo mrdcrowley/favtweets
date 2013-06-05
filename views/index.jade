@@ -2,4 +2,8 @@ extend layout
 
 block content
 	- each post in posts
-		p #{post.text}
+		div#tweet
+			p#text #{post.text}
+			p#name
+				a(href='https://twitter.com/#{post.user.screen_name}/status/#{post.id_str}') &ndash;
+				|  #{post.user.name}
