@@ -18,7 +18,7 @@ var twit = new Twit({
     consumer_key:         ''
   , consumer_secret:      ''
   , access_token:         ''
-  , access_token_secret:  'ZvGZnWOtzui010wTBEfN6N3QbkqpxscGS1G5KmpupI'
+  , access_token_secret:  ''
 })
 
 
