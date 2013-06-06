@@ -121,9 +121,10 @@ body p {
   line-height: 1.8;
 }
 .container {
-  max-width: 35em;
-  margin: 50px auto;
+  margin: auto;
+  max-width: 45em;
   overflow: hidden;
+  padding: 1em;
 }
 #tweet #text {
   font-size: 350%;
@@ -132,6 +133,11 @@ body p {
   font-size: 200%;
   font-weight: 700;
   text-align: right;
+}
+#tubular-player {
+  opacity: 0.05;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5);
+  filter: alpha(opacity=5);
 }
 footer {
   max-width: 500px;

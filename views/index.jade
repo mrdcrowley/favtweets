@@ -7,3 +7,10 @@ block content
 			p#name
 				a(href='https://twitter.com/#{post.user.screen_name}/status/#{post.id_str}') ~
 				|   #{post.user.name}
+	footer
+		p Site by  
+			a(href="http://david-crowley.com/") David Crowley
+		p Video by  
+			a(href="http://www.youtube.com/watch?v=tYBlAon683s") Jankovics Marcell
+		p Quotes by  
+			a(href='https://twitter.com/#{post.user.screen_name}/favorites') #{post.user.name}
