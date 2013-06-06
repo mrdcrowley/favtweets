@@ -3,11 +3,15 @@ html
 	head
 		title @#{title}'s favtweet
 		link(rel='stylesheet', href='/css/style.css')
-	body
+	body(id='#{page}')
 		.container
 			block content
+		footer
+			p Site by  
+				a(href="http://david-crowley.com/") David Crowley
+			p Video by  
+				a(href="http://www.youtube.com/watch?v=tYBlAon683s") Jankovics Marcell
 
-	block scripts
-		script(src='/js/jquery.js')
-		script(src='/js/site.js')
-		script(src='/js/jquery.tubular.1.0.js')
+	script(src='/js/jquery.js')
+	script(src='/js/site.js')
+	script(src='/js/jquery.tubular.1.0.js')

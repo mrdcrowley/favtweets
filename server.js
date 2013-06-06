@@ -18,7 +18,7 @@ var twit = new Twit({
     consumer_key:         ''
   , consumer_secret:      ''
   , access_token:         ''
-  , access_token_secret:  ''
+  , access_token_secret:  'ZvGZnWOtzui010wTBEfN6N3QbkqpxscGS1G5KmpupI'
 })
 
 
@@ -35,7 +35,10 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', function (req, res) {
 	var username = ''
 	res.render('index',
-		{ title : 'Home' }
+		{ 
+			page: 'index',
+			title : 'Home'
+		}
 	)
 })
 
@@ -43,8 +46,11 @@ app.get('/user/:username', function (req, res) {
 	var username = req.params.username
 		, tweetCount = 200
 
-	res.render('index',
-		{ title : username }
+	res.render('tweet',
+		{ 
+			page: 'tweet',
+			title : username
+		}
 	)
 	twit.get('favorites/list', { screen_name: username, count: tweetCount },  function (err, json) {
 		number = 1 + Math.floor(Math.random() * tweetCount)

@@ -1,5 +1,5 @@
 $().ready(function() {
-	$('.container').tubular({
+	$('#tweet .container').tubular({
 		videoId: 'tYBlAon683s'
 		, mute: true
 		, ratio: 4/3

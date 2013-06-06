@@ -1,0 +1,8 @@
+extend layout
+
+block content
+	- var post = posts[number]
+		p#text #{post.text}
+		p#name
+			a(href='https://twitter.com/#{post.user.screen_name}/status/#{post.id_str}') ~
+			|   #{post.user.name}
