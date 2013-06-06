@@ -121,15 +121,15 @@ body p {
   line-height: 1.8;
 }
 .container {
-  max-width: 500px;
+  max-width: 35em;
   margin: 50px auto;
   overflow: hidden;
 }
 #tweet #text {
-  font-size: 300%;
+  font-size: 350%;
 }
 #tweet #name {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 700;
   text-align: right;
 }
